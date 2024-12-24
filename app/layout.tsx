@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex p-14 justify-between">
+        <div className="flex p-14 justify-between bg-white">
           <h1 className="font-bold text-3xl">
             <Link href="/">Hemant Negi</Link>
           </h1>
@@ -28,6 +28,14 @@ export default function RootLayout({
           </ul>
         </div>
         {children}
+        <div className="flex p-14 justify-between bg-white">
+          <div>powerd by</div>
+          <div className="flex w-[70%] justify-evenly">
+            <div>Call</div>
+            <div>Email</div>
+            <div>Follow</div>
+          </div>
+        </div>
       </body>
     </html>
   );
