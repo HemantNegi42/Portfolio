@@ -5,14 +5,14 @@ import profilePhoto from "../public/Profile.png";
 export default function Home() {
   return (
     <div className="relative flex flex-col-reverse lg:flex-row">
-      <div className="flex flex-col lg:flex-row items-center justify-center h-screen bg-[#E6DACE] w-[40%]"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-[60%]">
-        <div className="flex flex-col justify-between  shadow-lg rounded-lg">
+      <div className="flex flex-col items-center justify-center h-screen bg-[#E6DACE] w-screen lg:w-[40%]"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col lg:flex-row items-center justify-center w-[60%]">
+        <div className="flex flex-col justify-between  shadow-2xl rounded-lg">
           <div className="bg-[#f5ebe1] flex flex-col text-center p-16">
             <Image
               src={profilePhoto}
               alt="profile Photo"
-              className="rounded-full mx-auto mb-4 bg-white h-48 w-48"
+              className="rounded-full mx-auto mb-4 bg-white lg:h-48 min-h-48 min-w-48 lg:w-48"
             />
 
             <h1 className="text-4xl font-bold">Hemant Negi</h1>
@@ -56,6 +56,7 @@ export default function Home() {
           <p className="text-gray-600 mt-4"></p>
         </div>
       </div>
+      <div className="bg-white md:h-screen h-60 lg:w-[60%] "></div>
     </div>
   );
 }
