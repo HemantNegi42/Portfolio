@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="flex p-14 justify-between bg-white">
+        <div className="flex p-14 justify-between bg-white lg:sticky lg:top-0 lg:z-10">
           <h1 className="font-bold text-3xl">
             <Link href="/">Hemant Negi</Link>
           </h1>

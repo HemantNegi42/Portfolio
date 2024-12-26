@@ -15,8 +15,10 @@ export default function Home() {
               className="rounded-full mx-auto mb-4 bg-white lg:h-48 min-h-48 min-w-48 lg:w-48"
             />
 
-            <h1 className="text-4xl font-bold">Hemant Negi</h1>
-            <p className="mt-2">MCA Graduate</p>
+            <h1 className="text-4xl font-bold">Hemant</h1>
+            <h1 className="text-4xl font-bold">Negi</h1>
+            <span className="h-0.5 w-16 bg-blue-600 my-6 mx-auto"></span>
+            <p>MCA Graduate</p>
           </div>
           <div className="bg-white p-5 flex items-center justify-evenly">
             <a href="#" className="text-gray-500">
@@ -39,13 +41,13 @@ export default function Home() {
           <div className="flex space-x-4 mt-4">
             <Link
               href="/resume"
-              className="bg-blue-500 text-white px-4 py-2 rounded"
+              className="bg-[#0050FF] text-white px-8 py-2 rounded-full hover:bg-white border-[#0050FF] border-2 hover:text-black "
             >
               RESUME
             </Link>
             <Link
               href="projects"
-              className="border border-gray-500 px-4 py-2 rounded"
+              className="border border border-black px-8 py-2 rounded-full hover:bg-[#0050FF] hover:border-[#0050FF] hover:text-white"
             >
               PROJECTS
             </Link>
