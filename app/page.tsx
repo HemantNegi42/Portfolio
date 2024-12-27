@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import profilePhoto from "../public/Profile.png";
-
+import fb from "../public/icons8-facebook-32.png";
+import insta from "../public/icons8-instagram-32.png";
+import linkedin from "../public/icons8-linkedin-32.png";
+import github from "../public/icons8-github-25.png";
 export default function Home() {
   return (
     <div className="relative flex flex-col-reverse lg:flex-row">
@@ -21,17 +24,20 @@ export default function Home() {
             <p>MCA Graduate</p>
           </div>
           <div className="bg-white p-5 flex items-center justify-evenly">
-            <a href="#" className="text-gray-500">
-              <i className="fab fa-facebook">fb</i>
+            <a href="#" target="blank">
+              <Image alt="fb" src={fb} height={25} width={25} />
             </a>
-            <a href="#" className="text-gray-500">
-              <i className="fab fa-twitter">tw</i>
+            <a href="https://www.instagram.com/__max.42/" target="blank">
+              <Image alt="insta" src={insta} height={25} width={25} />
             </a>
-            <a href="#" className="text-gray-500">
-              <i className="fab fa-linkedin">li</i>
+            <a href="https://github.com/HemantNegi42" target="blank">
+              <Image alt="github" src={github} height={25} width={25} />
             </a>
-            <a href="#" className="text-gray-500">
-              <i className="fab fa-instagram">in</i>
+            <a
+              href="https://www.linkedin.com/in/hemant-negi-b2623127b/"
+              target="blank"
+            >
+              <Image alt="linkedin" src={linkedin} height={25} width={25} />
             </a>
           </div>
         </div>

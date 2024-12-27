@@ -1,6 +1,11 @@
 import "./globals.css";
 import Link from "next/link";
 import Ham from "./hamburger";
+import Image from "next/image";
+import fb from "../public/icons8-facebook-32.png";
+import insta from "../public/icons8-instagram-32.png";
+import linkedin from "../public/icons8-linkedin-32.png";
+import github from "../public/icons8-github-25.png";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,31 +35,34 @@ export default function RootLayout({
           </ul>
         </div>
         {children}
-        <div className="flex flex-col-reverse lg:flex-row p-14 justify-between bg-white">
+        <div className="flex flex-col-reverse lg:flex-row p-10 justify-between bg-white font-light">
           <div>made with ❤️ by Hemant</div>
           <div className="grid grid-cols-2 lg:grid-cols-3 lg:text-center gap-y-5 my-3">
             <div className="flex flex-col gap-2">
-              <h3>Call</h3>
+              <h3 className="text-sm font-medium">Call</h3>
               <p className="text-sm">9897635804</p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3>Write</h3>
+              <h3 className="text-sm font-medium">Write</h3>
               <p className="text-sm">hemantnegi708@gmail.com</p>
             </div>
             <div className="flex flex-col gap-2 w-[50%] lg:w-full">
-              <h3>Follow</h3>
-              <div className="flex justify-between lg:justify-evenly">
-                <a href="#" className="text-gray-500">
-                  <i className="fab fa-facebook">fb</i>
+              <h3 className="text-sm font-medium">Follow</h3>
+              <div className="flex justify-between lg:justify-evenly lg:mx-4">
+                <a href="#" target="blank">
+                  <Image alt="fb" src={fb} height={19} width={19} />
                 </a>
-                <a href="#" className="text-gray-500">
-                  <i className="fab fa-twitter">tw</i>
+                <a href="https://www.instagram.com/__max.42/" target="blank">
+                  <Image alt="insta" src={insta} height={19} width={19} />
                 </a>
-                <a href="#" className="text-gray-500">
-                  <i className="fab fa-linkedin">li</i>
+                <a href="https://github.com/HemantNegi42" target="blank">
+                  <Image alt="github" src={github} height={19} width={19} />
                 </a>
-                <a href="#" className="text-gray-500">
-                  <i className="fab fa-instagram">in</i>
+                <a
+                  href="https://www.linkedin.com/in/hemant-negi-b2623127b/"
+                  target="blank"
+                >
+                  <Image alt="linkedin" src={linkedin} height={19} width={19} />
                 </a>
               </div>
             </div>
