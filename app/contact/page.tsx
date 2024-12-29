@@ -1,3 +1,4 @@
+"use client";
 export default function ContactPage() {
   return (
     <div className="flex flex-col justify-center items-center bg-[#E6DACE]">

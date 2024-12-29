@@ -1,8 +1,14 @@
 import Image from "next/image";
-import html from "../../public/icons8-html-50.png";
-import css from "../../public/icons8-css-50.png";
-import js from "../../public/icons8-js-50.png";
-import react from "../../public/icons8-react-50.png";
+import html from "../../public/icons8-html-48.png";
+import css from "../../public/icons8-css-48.png";
+import js from "../../public/icons8-js-48.png";
+import react from "../../public/react.png";
+import mongodb from "../../public/mongodb.png";
+import leetcode from "../../public/leetcode.png";
+import gfg from "../../public/GFG.png";
+import c from "../../public/c.png";
+import cpp from "../../public/cpp.png";
+import next from "../../public/icons8-nextjs-48.png";
 export default function Resume() {
   return (
     <div className="flex flex-col justify-center items-center bg-[#E6DACE]">
@@ -43,16 +49,28 @@ export default function Resume() {
           </div>
         </div>
         <div className="my-8 px-10 py-20 bg-white shadow-2xl rounded-lg">
-          <h1>Skillset</h1>
-          <h1>Language</h1>
-          <div className="grid grid-cols-4 gap-y-4">
+          <h1 className="text-2xl font-bold mb-10">Coding Profiles</h1>
+          <div className="grid grid-cols-4 gap-3 place-items-center">
+            <a href="https://leetcode.com/u/Hemant_42/" target="_blank">
+              <Image alt="leetcode" src={leetcode} />
+            </a>
+            <a
+              href="https://www.geeksforgeeks.org/user/hemantntz56/"
+              target="blank"
+            >
+              <Image alt="gfg" src={gfg} />
+            </a>
+          </div>
+          <h1 className="text-2xl font-bold my-10">Language</h1>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 place-items-center">
             <Image alt="html" src={html} />
-            <Image alt="html" src={css} />
-            <Image alt="html" src={js} />
-            <Image alt="html" src={react} />
-            <Image alt="html" src={html} />
-            <Image alt="html" src={html} />
-            <Image alt="html" src={html} />
+            <Image alt="css" src={css} />
+            <Image alt="js" src={js} />
+            <Image alt="react" src={react} />
+            <Image alt="mongodb" src={mongodb} />
+            <Image alt="c" src={c} />
+            <Image alt="c++" src={cpp} />
+            <Image alt="nextjs" src={next} />
           </div>
         </div>
       </div>
