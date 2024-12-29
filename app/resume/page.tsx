@@ -1,14 +1,5 @@
 import Image from "next/image";
-import html from "../../public/icons8-html-48.png";
-import css from "../../public/icons8-css-48.png";
-import js from "../../public/icons8-js-48.png";
-import react from "../../public/react.png";
-import mongodb from "../../public/mongodb.png";
-import leetcode from "../../public/leetcode.png";
-import gfg from "../../public/GFG.png";
-import c from "../../public/c.png";
-import cpp from "../../public/cpp.png";
-import next from "../../public/icons8-nextjs-48.png";
+
 export default function Resume() {
   return (
     <div className="flex flex-col justify-center items-center bg-[#E6DACE]">
@@ -52,25 +43,30 @@ export default function Resume() {
           <h1 className="text-2xl font-bold mb-10">Coding Profiles</h1>
           <div className="grid grid-cols-4 gap-3 place-items-center">
             <a href="https://leetcode.com/u/Hemant_42/" target="_blank">
-              <Image alt="leetcode" src={leetcode} />
+              <Image
+                alt="leetcode"
+                src={"/leetcode.png"}
+                height={48}
+                width={48}
+              />
             </a>
             <a
               href="https://www.geeksforgeeks.org/user/hemantntz56/"
               target="blank"
             >
-              <Image alt="gfg" src={gfg} />
+              <Image alt="gfg" src={"/gfg.png"} width={48} height={48} />
             </a>
           </div>
           <h1 className="text-2xl font-bold my-10">Language</h1>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 place-items-center">
-            <Image alt="html" src={html} />
-            <Image alt="css" src={css} />
-            <Image alt="js" src={js} />
-            <Image alt="react" src={react} />
-            <Image alt="mongodb" src={mongodb} />
-            <Image alt="c" src={c} />
-            <Image alt="c++" src={cpp} />
-            <Image alt="nextjs" src={next} />
+            <Image alt="html" src={"/html.png"} width={48} height={48} />
+            <Image alt="css" src={"/css.png"} width={48} height={48} />
+            <Image alt="js" src="/js.png" width={48} height={48} />
+            <Image alt="react" src="/react.png" width={48} height={48} />
+            <Image alt="mongodb" src="/mongodb.png" width={48} height={48} />
+            <Image alt="c" src="/c.png" width={48} height={48} />
+            <Image alt="c++" src="/cpp.png" width={48} height={48} />
+            <Image alt="nextjs" src="/nextjs.png" width={48} height={48} />
           </div>
         </div>
       </div>

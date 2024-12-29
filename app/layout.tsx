@@ -2,10 +2,6 @@ import "./globals.css";
 import Link from "next/link";
 import Ham from "./hamburger";
 import Image from "next/image";
-import fb from "../public/icons8-facebook-32.png";
-import insta from "../public/icons8-instagram-32.png";
-import linkedin from "../public/icons8-linkedin-32.png";
-import github from "../public/icons8-github-25.png";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,19 +46,34 @@ export default function RootLayout({
               <h3 className="text-sm font-medium">Follow</h3>
               <div className="flex justify-between lg:justify-evenly lg:mx-4">
                 <a href="#" target="blank">
-                  <Image alt="fb" src={fb} height={19} width={19} />
+                  <Image alt="fb" src={"/fb.png"} height={19} width={19} />
                 </a>
                 <a href="https://www.instagram.com/__max.42/" target="blank">
-                  <Image alt="insta" src={insta} height={19} width={19} />
+                  <Image
+                    alt="insta"
+                    src={"/insta.png"}
+                    height={19}
+                    width={19}
+                  />
                 </a>
                 <a href="https://github.com/HemantNegi42" target="blank">
-                  <Image alt="github" src={github} height={19} width={19} />
+                  <Image
+                    alt="github"
+                    src={"/github.png"}
+                    height={19}
+                    width={19}
+                  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/hemant-negi-b2623127b/"
                   target="blank"
                 >
-                  <Image alt="linkedin" src={linkedin} height={19} width={19} />
+                  <Image
+                    alt="linkedin"
+                    src={"/linkedin.png"}
+                    height={19}
+                    width={19}
+                  />
                 </a>
               </div>
             </div>

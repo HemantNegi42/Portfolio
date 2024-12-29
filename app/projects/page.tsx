@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from "../../public/Profile.png";
+
 export default function Projects() {
   return (
     <div className="flex flex-col justify-center items-center bg-[#E6DACE]">
@@ -34,7 +34,13 @@ export default function Projects() {
             </p>
           </div>
           <div className="lg:w-1/2 rounded-lg">
-            <Image alt="project" src={profile} className="h-full w-full" />
+            <Image
+              alt="project"
+              src={"/Profile.png"}
+              className="h-full w-full"
+              height={25}
+              width={25}
+            />
           </div>
         </div>
       </div>
@@ -58,7 +64,13 @@ export default function Projects() {
             </p>
           </div>
           <div className="lg:w-1/2 rounded-lg">
-            <Image alt="project" src={profile} className="h-full w-full" />
+            <Image
+              alt="project"
+              src={"/Profile.png"}
+              className="h-full w-full"
+              height={25}
+              width={25}
+            />
           </div>
         </div>
       </div>
