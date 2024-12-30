@@ -10,7 +10,7 @@ export default function Projects() {
           Here are all my projects that showcase my journey and expertise as a
           developer. Each one reflects my dedication to learning and
           implementing cutting-edge technologies. Feel free to explore and see
-          the ideas I’ve brought to life!
+          the ideas I&apos;ve brought to life.
         </p>
         <div className="bg-white shadow-2xl rounded-lg flex justify-between my-8 flex-col lg:flex-row">
           <div className="px-10 py-10  w-[60%] flex flex-col">
