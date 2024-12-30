@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <div className="p-8 lg:ml-8">
           <h1 className="text-9xl font-bold">Hello</h1>
-          <p className="text-3xl mt-4">Here's who I am & what I do</p>
+          <p className="text-3xl mt-4">Here&apos;s who I am & what I do</p>
           <div className="flex space-x-4 mt-4">
             <Link
               href="/resume"
