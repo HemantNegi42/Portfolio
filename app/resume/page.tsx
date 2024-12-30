@@ -54,7 +54,7 @@ export default function Resume() {
               href="https://www.geeksforgeeks.org/user/hemantntz56/"
               target="blank"
             >
-              <Image alt="gfg" src={"/gfg.png"} width={48} height={48} />
+              <Image alt="gfg" src={"/GFG.png"} width={48} height={48} />
             </a>
           </div>
           <h1 className="text-2xl font-bold my-10">Language</h1>
