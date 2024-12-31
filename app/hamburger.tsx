@@ -41,7 +41,10 @@ export default function Ham() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <div className="flex flex-col items-center justify-between min-h-[250px]">
+            <div
+              className="flex flex-col items-center justify-between min-h-[250px]"
+              onClick={() => setIsNavOpen((prev) => !prev)}
+            >
               <Link href="/" className="border-b border-gray-400 my-8">
                 About Me
               </Link>

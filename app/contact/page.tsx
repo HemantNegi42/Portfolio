@@ -27,6 +27,7 @@ export default function ContactPage() {
           <h1>Message </h1>
           <input className="p-3 mt-4 border w-full border-b-sky-400"></input>
         </div>
+        <button>send</button>
       </div>
     </div>
   );
