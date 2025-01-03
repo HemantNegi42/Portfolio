@@ -64,7 +64,6 @@ export default function Home() {
           <p className="text-gray-600 mt-4">
             I am Hemant Negi.Passionate to work.
           </p>
-          <p className="text-gray-600 mt-4"></p>
         </div>
       </div>
       <div className="bg-white md:h-screen h-60 lg:w-[60%] "></div>

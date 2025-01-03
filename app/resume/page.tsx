@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { skillsdata } from "./skills";
+import { eduacationData } from "./education";
 
 export default function Resume() {
   return (
@@ -16,34 +18,26 @@ export default function Resume() {
             Download
           </Link>
         </div>
-        <div className="px-10 py-20 bg-white shadow-2xl rounded-lg flex justify-between my-8 flex-col lg:flex-row">
-          <div className="flex flex-col space-y-2">
-            <h1 className="text-[#0050FF] text-xl font-bold">2022-2024</h1>
-            <p className="text-lg font-light">Graphic Era Hill University</p>
-            <p className="text-sm font-extralight">MCA</p>
-          </div>
-          <div className="lg:w-1/2">
-            <p>
-              During my time at Graphic Era Hill University, I excelled in
-              programming languages like C,C++ and Java and actively
-              participated in projects focused on Full Stack Web Devlopment.
-            </p>
-          </div>
-        </div>
-        <div className="my-8 px-10 py-20 bg-white shadow-2xl rounded-lg flex justify-between flex-col lg:flex-row">
-          <div className="flex flex-col space-y-2">
-            <h1 className="text-[#0050FF] text-xl font-bold">2018-2021</h1>
-            <p className="text-lg font-light">MBGPG KU</p>
-            <p className="text-sm font-extralight">BSc.</p>
-          </div>
-          <div className="lg:w-1/2">
-            <p>
-              During my time at K University, I excelled in programming
-              languages like C,C++ and Java and actively participated in
-              projects focused on Full Stack Web Devlopment.
-            </p>
-          </div>
-        </div>
+        {eduacationData.map((data) => {
+          return (
+            <div
+              key={data.college}
+              className="px-10 py-20 bg-white shadow-2xl rounded-lg flex justify-between my-8 flex-col lg:flex-row"
+            >
+              <div className="flex flex-col space-y-2">
+                <h1 className="text-[#0050FF] text-xl font-bold">
+                  {data.year}
+                </h1>
+                <p className="text-lg font-light">{data.college}</p>
+                <p className="text-sm font-extralight">{data.course}</p>
+              </div>
+              <div className="lg:w-1/2">
+                <p>{data.description}</p>
+              </div>
+            </div>
+          );
+        })}
+
         <div className="my-8 px-10 py-20 bg-white shadow-2xl rounded-lg">
           <h1 className="text-2xl font-bold mb-10">Coding Profiles</h1>
           <div className="grid grid-cols-3 lg:grid-cols-4  gap-3 place-items-center">
@@ -64,14 +58,17 @@ export default function Resume() {
           </div>
           <h1 className="text-2xl font-bold my-10">Language</h1>
           <div className="grid grid-cols-3 lg:grid-cols-4 gap-3 place-items-center">
-            <Image alt="html" src={"/html.png"} width={48} height={48} />
-            <Image alt="css" src={"/css.png"} width={48} height={48} />
-            <Image alt="js" src="/js.png" width={48} height={48} />
-            <Image alt="react" src="/react.png" width={48} height={48} />
-            <Image alt="mongodb" src="/mongodb.png" width={48} height={48} />
-            <Image alt="c" src="/c.png" width={48} height={48} />
-            <Image alt="c++" src="/cpp.png" width={48} height={48} />
-            <Image alt="nextjs" src="/nextjs.png" width={48} height={48} />
+            {skillsdata.map((skill) => {
+              return (
+                <Image
+                  key={skill.title}
+                  alt={skill.title}
+                  src={skill.image}
+                  width={48}
+                  height={48}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
