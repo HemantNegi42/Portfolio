@@ -9,8 +9,21 @@ interface ProjectData {
 
 export const data: ProjectData[] = [
   {
+    title: "CareerWave ",
+    description: `CareerWave is a modern job portal designed to connect
+          job seekers with potential employers seamlessly. It provides features 
+          like job search, resume uploads, and real-time application tracking. 
+          Employers can post job openings, manage applications, and find the right
+          talent effortlessly. With an intuitive interface and advanced filtering options,
+          CareerWave simplifies the hiring process for everyone involved.`,
+    link: "https://careerwaves-drew.onrender.com/",
+    image: "/careerwave.png",
+    role: " Connect. Grow. Succeed.",
+    languageUsed: "MERN Stack",
+  },
+  {
     title: "Weather Master",
-    description: `The Weather Master project is a comprehensive application designed
+    description: `The Weather Master project is a comprehensive application designed 
             to provide real-time weather updates, forecasts, and environmental
             insights. It utilizes APIs like OpenWeatherMap to fetch accurate
             data and presents it through an intuitive and visually appealing
